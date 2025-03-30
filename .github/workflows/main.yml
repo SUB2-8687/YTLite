@@ -137,7 +137,7 @@ jobs:
       - name: Download YouTube Plus
         id: download_ytp
         run: |
-          deb_url="https://www.dropbox.com/scl/fi/5fgyfvxag6cwle2iqd6ey/YTLite-5.1-Kor-rootless.deb?rlkey=12v1ix3vvx1gcknnnj7dk1hvh&st=7yrzwf74&dl=0"
+          deb_url="https://www.dropbox.com/scl/fi/80e2yyrfscdmc7h0uccak/YTLite-5.2b1-Kor-rootless.deb?rlkey=044rhftuwgsdfvo4kigvk4qif&st=wa1cag68&dl=0"
           wget "$deb_url" --no-verbose -O ${{ github.workspace }}/ytplus.deb
 
       - name: Download YouTube
