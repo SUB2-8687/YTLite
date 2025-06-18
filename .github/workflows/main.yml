@@ -137,7 +137,7 @@ jobs:
       - name: Download YouTube Plus
         id: download_ytp
         run: |
-          deb_url="https://github.com/dayanch96/YTLite/releases/download/v${{ inputs.tweak_version }}/com.dvntm.ytlite_${{ inputs.tweak_version }}_iphoneos-arm.deb"
+          deb_url="https://www.dropbox.com/scl/fi/80e2yyrfscdmc7h0uccak/YTLite-5.2b1-Kor-rootless.deb?rlkey=044rhftuwgsdfvo4kigvk4qif&st=c3gjd0gk&dl=0"
           wget "$deb_url" --no-verbose -O ${{ github.workspace }}/ytplus.deb
 
       - name: Download YouTube
