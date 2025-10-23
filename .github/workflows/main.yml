@@ -141,7 +141,7 @@ jobs:
       - name: Download YouTube Plus
         id: download_ytp
         run: |
-          deb_url="https://www.dropbox.com/scl/fi/v1wc10tc8ebyk9eei1yrm/YTLite-5.2b3-Kor-rootless.deb?rlkey=9mui29w24w2b6ew3gppw28iie&st=4xe4lugx&dl=0"
+          deb_url="https://www.dropbox.com/scl/fi/v1wc10tc8ebyk9eei1yrm/YTLite-5.2b3-Kor-rootless.deb?rlkey=9mui29w24w2b6ew3gppw28iie&st=1kozy5ht&dl=0"
           wget "$deb_url" --no-verbose -O ${{ github.workspace }}/ytplus.deb
 
       - name: Clone Open in YouTube (Safari extension)
