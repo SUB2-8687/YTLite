@@ -42,7 +42,7 @@ on:
 
       tweak_version:
         description: "The version of the tweak to use. Enter the version manually from dayanch96/YTLite/releases or leave default"
-        default: "5.2b4"
+        default: "5.2b3"
         required: true
         type: string
 
@@ -141,7 +141,7 @@ jobs:
       - name: Download YouTube Plus
         id: download_ytp
         run: |
-          deb_url="https://www.dropbox.com/scl/fi/v1wc10tc8ebyk9eei1yrm/YTLite-5.2b3-Kor-rootless.deb?rlkey=9mui29w24w2b6ew3gppw28iie&st=1kozy5ht&dl=0"
+          deb_url="https://www.dropbox.com/scl/fi/yzdrn5bvp4pq8oiy8l0z9/YTLite-5.2b4-Kor-rootless.deb?rlkey=ctm0inhrmoqjn8vsu6wkkqtz4&st=4ubep03w&dl=0"
           wget "$deb_url" --no-verbose -O ${{ github.workspace }}/ytplus.deb
 
       - name: Clone Open in YouTube (Safari extension)
