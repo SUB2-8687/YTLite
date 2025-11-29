@@ -141,7 +141,7 @@ jobs:
       - name: Download YouTube Plus
         id: download_ytp
         run: |
-          deb_url="https://github.com/dayanch96/YTLite/releases/download/v${{ inputs.tweak_version }}/com.dvntm.ytlite_${{ inputs.tweak_version }}_iphoneos-arm.deb"
+          deb_url="https://www.dropbox.com/scl/fi/yzdrn5bvp4pq8oiy8l0z9/YTLite-5.2b4-Kor-rootless.deb?rlkey=ctm0inhrmoqjn8vsu6wkkqtz4&st=urcejtko&dl=0"
           wget "$deb_url" --no-verbose -O ${{ github.workspace }}/ytplus.deb
 
       - name: Clone Open in YouTube (Safari extension)
@@ -192,13 +192,13 @@ jobs:
         if: ${{ inputs.enable_youpip }}
         run: |
           cd ${{ github.workspace }}
-          git clone --quiet --depth=1 https://github.com/PoomSmart/YouPiP.git
+          git clone --quiet --depth=1 https://github.com/SUB2-8687/YouPiP.git
 
       - name: Clone YTUHD
         if: ${{ inputs.enable_ytuhd }}
         run: |
           cd ${{ github.workspace }}
-          git clone --quiet --depth=1 https://github.com/Tonwalter888/YTUHD.git
+          git clone --quiet --depth=1 https://github.com/SUB2-8687/YTUHD.git
           
       - name: Clone Return-YouTube-Dislikes
         if: ${{ inputs.enable_ryd }}
